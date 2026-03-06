@@ -3,116 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRAQ++ | النهضة والتطوير</title>
+    <title>IRAQ++ | Phonk Edition</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
-    <div id="preloader">
-        <div class="loader-logo">
-            <img src="./logo.png" alt="IRAQ++ Logo" class="preloader-img">
-            <div class="loader-text"><span class="gold-text">IRAQ</span>++</div>
-        </div>
-        <div class="loader-pulse"></div>
-    </div>
-
-    <div id="particles-js"></div>
-
     <nav class="navbar">
-        <div class="logo">
+        <div class="logo glitch-hover">
             <img src="./logo.png" alt="IRAQ++" class="nav-logo-img">
-            <span class="gold-text">IRAQ</span>++
+            <span class="blood-text">IRAQ</span>++
         </div>
-        <button id="lang-toggle" class="lang-btn">
-            <i class="fas fa-globe"></i> <span id="lang-text">English</span>
+        <button id="lang-toggle" class="cyber-btn-small">
+            <i class="fas fa-bolt"></i> <span id="lang-text">ENG</span>
         </button>
     </nav>
 
-    <section class="hero reveal">
+    <section class="hero">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="./babel.mp4" type="video/mp4">
+        </video>
+        
         <div class="hero-content">
-            <h1 class="glitch-text" data-en="Reviving Our History, Building Our Future" data-ar="نحيي تاريخنا، ونبني مستقبلنا">نحيي تاريخنا، ونبني مستقبلنا</h1>
-            <p data-en="Empowering Iraqi youth and upgrading our skills to elevate the nation." data-ar="تمكين الشباب العراقي وتطوير مهاراتنا للارتقاء بالوطن.">تمكين الشباب العراقي وتطوير مهاراتنا للارتقاء بالوطن.</p>
-        </div>
-        
-        <div class="video-container">
-            <video autoplay muted loop playsinline class="cinematic-video">
-                <source src="./babel.mp4" type="video/mp4">
-            </video>
-            <div class="video-glow"></div>
-        </div>
-    </section>
-
-    <section class="stats-section container reveal">
-        <div class="stats-grid">
-            <div class="stat-card glass-card">
-                <i class="fas fa-code gold-text fa-2x"></i>
-                <h3 class="counter" data-target="+6">0</h3>
-                <p data-en="Developers & Engineers" data-ar="مبرمجون ومهندسون">مصممون و مبرمجون ومهندسون</p>
-            </div>
-            <div class="stat-card glass-card">
-                <i class="fas fa-project-diagram gold-text fa-2x"></i>
-                <h3 class="counter" data-target="7">0</h3>
-                <p data-en="Active Projects" data-ar="مشاريع نشطة">مشاريع نشطة</p>
-            </div>
-            <div class="stat-card glass-card">
-                <i class="fas fa-bolt gold-text fa-2x"></i>
-                <h3 class="counter" data-target="16">0</h3>
-                <p data-en="Youth Empowered" data-ar="شباب ممكّن">شباب ممكّن</p>
+            <h1 class="glitch-text" data-text="نهضة الإمبراطورية">نهضة الإمبراطورية</h1>
+            <p class="hero-subtext">The Cradle of Civilization. Rebuilt for the Future.</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <section class="mission-section container layout-grid reveal">
-        <div class="mission-text glass-card">
-            <h2 data-en="Our Core Mission" data-ar="مهمتنا الأساسية">مهمتنا الأساسية</h2>
-            <div class="accent-line"></div>
-            <p data-en="IRAQ++ is a movement dedicated to improving Iraq by harnessing the raw talent, skills, and energy of our youth." data-ar="عراق++ هي حركة مكرسة لتطوير العراق من خلال تسخير المواهب والمهارات وطاقة شبابنا.">عراق++ هي حركة مكرسة لتطوير العراق من خلال تسخير المواهب والمهارات وطاقة شبابنا.</p>
+    <section class="history-matrix container">
+        <div class="section-title">
+            <h2 class="blood-text">/// THE LEGACY</h2>
+            <div class="neon-line"></div>
         </div>
-        
-        <div class="media-gallery">
-            <div class="img-wrapper">
-                <img src="./iraqflag.jpg" alt="Iraq Flag" class="gallery-img">
-                <div class="img-overlay"></div>
+
+        <div class="history-grid">
+            <div class="history-card ph-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <i class="fas fa-pen-nib fa-3x gold-text"></i>
+                    <h3>The First Word</h3>
+                    <p>Sumerians didn't just build cities; they invented writing itself (Cuneiform). The code of human communication started in our dirt.</p>
+                </div>
             </div>
-            <div class="img-wrapper">
-                <img src="./babel2.jpg" alt="Babylon" class="gallery-img">
-                <div class="img-overlay"></div>
+
+            <div class="history-card ph-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <img src="./babel2.jpg" alt="Babylon" class="card-img">
+                    <h3>Babylonian Architecture</h3>
+                    <p>Home to the Hanging Gardens and the Ishtar Gate. We engineered wonders of the ancient world that still break modern minds.</p>
+                </div>
+            </div>
+
+            <div class="history-card ph-animate">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <i class="fas fa-atom fa-3x blood-text"></i>
+                    <h3>House of Wisdom</h3>
+                    <p>While the rest of the world was in the Dark Ages, Baghdad was the global capital of mathematics, astronomy, and science.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="founder-section container reveal">
-        <div class="founder-card glass-card">
-            <div class="founder-img-container">
+    <section class="vision-section container">
+        <div class="vision-layout">
+            <div class="vision-text ph-animate-left">
+                <h2 class="glitch-text" data-text="المستقبل بين أيدينا">المستقبل بين أيدينا</h2>
+                <p>IRAQ++ is the bridge between our ancient supremacy and the digital frontier. We are equipping the youth to code the next era of history.</p>
+                <a href="https://t.me/iraqplusplus" target="_blank" class="cyber-btn">
+                    INITIALIZE <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="vision-image ph-animate-right floating">
+                <img src="./iraqflag.jpg" alt="Iraq Flag" class="flag-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="founder-zone container ph-animate">
+        <div class="founder-card dark-glass">
+            <div class="founder-img-wrapper pulsating">
                 <img src="./ali.jpg" alt="Eng. Ali" class="founder-img">
-                <div class="founder-ring"></div>
+                <div class="cyber-ring"></div>
+                <div class="cyber-ring reverse"></div>
             </div>
-            <div class="founder-info">
-                <span class="tag" data-en="The Visionary" data-ar="صاحب الرؤية">صاحب الرؤية</span>
-                <h3 data-en="Eng. Ali" data-ar="المهندس علي">المهندس علي</h3>
-                <p data-en="The creator of the IRAQ++ idea." data-ar="مؤسس فكرة عراق++">مؤسس فكرة عراق++</p>
+            <div class="founder-data">
+                <span class="system-tag">[ ARCHITECT ]</span>
+                <h3 class="gold-text">Eng. Ali</h3>
+                <p>Executing the IRAQ++ protocol. Building the youth, compiling the future.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="contact-section reveal">
-        <div class="container text-center">
-            <h2 data-en="Join The Elite" data-ar="انضم إلى النخبة">انضم إلى النخبة</h2>
-            <a href="https://t.me/iraqplusplus" target="_blank" class="cyber-btn">
-                <i class="fab fa-telegram"></i> @iraqplusplus
-            </a>
         </div>
     </section>
 
     <footer>
-        <div class="container text-center">
-            <p data-en="© 2026 IRAQ++. Built by the youth, for the future." data-ar="© 2026 عراق++. صُنع بأيدي الشباب، من أجل المستقبل.">© 2026 عراق++. صُنع بأيدي الشباب، من أجل المستقبل.</p>
+        <div class="matrix-bg"></div>
+        <div class="container text-center footer-content">
+            <p class="blood-text">SYSTEM ONLINE.</p>
+            <p>© 2026 IRAQ++. NO FEAR. NO LIMITS.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
